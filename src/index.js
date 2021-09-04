@@ -3,10 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Cardlist from './components/Cardlist';
+import Gambar from "./assets/images/image.jpg";
+import Quotes from "./components/Quotes"
+const quotes = "Disaat payung teduh ku dengar , disitu lah tugas-tugas terbabat abis";
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <Cardlist name="Aldy Sufriyanto" nim="21120118120021" kelompok="16" isNameBold image={Gambar}></Cardlist>
+    <Quotes author="Jagoan Emak" quotes={quotes}></Quotes>
   </React.StrictMode>,
   document.getElementById('root')
 );
